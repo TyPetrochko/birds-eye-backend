@@ -1,8 +1,11 @@
 # Bird's Eye (.io)
 ## Backend
 
+This project uses maven, a dependency management system for java projects. To compile,
+use `mvn compile`. To run, use `mvn exec:java -Dexec.mainClass="com.birdseye.backend.Main" -e`.
+Because these commands are a bit unwieldy to use, you can also do `make compile` or `make run`.
 
-API
+# API
 
 ## Get groups
 
