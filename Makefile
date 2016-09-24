@@ -1,4 +1,8 @@
+all: compile run
+
 compile:
-	mvn compile
+	mvn compile -e
 run:
-	mvn exec:java -Dexec.mainClass=com.birdseye.backend.Main -e
+	mvn exec:java -Dexec.mainClass=com.birdseye.Main -e
+clean:
+	mvn clean
