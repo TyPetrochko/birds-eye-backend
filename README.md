@@ -70,7 +70,7 @@ Update the server with your current location.
 }
 ```
 - Response object if locations set to `false`
-	- `{"status": "ok"`
+	- `{"status": "ok"}`
 - List of statuses (maybe more to come)
 	- `ok`
 	- `bad request`
