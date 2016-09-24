@@ -11,6 +11,8 @@ API
 ## Ping
 
 Update the server with your current location.
+
+
 	- URL:
 		`to be determined...`
 	- Method:
