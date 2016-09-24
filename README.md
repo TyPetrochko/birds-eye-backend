@@ -10,10 +10,10 @@ API
 - Method:
 	- `GET`
 - Response object
-	- `{"groups": [
+	- ```{"groups": [
 			{"name":"Team Alex", "group_id":12, "num_teams": 6},
 			{"name":"Team Tyty", "group_id":4, "num_teams": 1}
-		]]}`
+		]]}```
 
 ## Join groups
 
