@@ -11,11 +11,19 @@ public class Main
 	{
 		System.out.println("Starting server...");
 		
-		// routes:
-		get("/groups", (req, res) -> "Get a list of groups");
-		post("/join", (req, res) -> joinGroup(req, res));
-		post("/create", (req, res) -> "Create a group");
-		post("/ping", (req, res) -> "Update the server with our whereabouts");
+		/* routes */
+		get("/groups", (req, res) -> {
+			return "TODO";
+		});
+		post("/join", (req, res) -> {
+			return "TODO";
+		});
+		post("/create", (req, res) -> {
+			return "TODO";
+		});
+		post("/ping", (req, res) -> {
+			return "TODO";
+		});
 
 	}
 

@@ -49,7 +49,7 @@ Create a group with a certain number of teams. If you don't want to play with te
 - Method:
 	- `POST`
 - Data params. `team` is optional.
-	- `{"teams": 2}`
+	- `{"name":"Lee's Team", "teams": 2}`
 - Response object:
 	- `{"group_id": 4}`
 
