@@ -68,7 +68,7 @@ Update the server with your current location.
 {"status": "ok", "locations": [
 		{"id": 4, "latitude": 41.613032, "longitude": -70.970479, "team": 1},
 		{"id": 3, "latitude": 41.512046, "longitude": -71.072379, "team": 2},
-		{"id", 7, "latitude": 41.603001, "longitude": -70.970479, "team", 1}
+		{"id": 7, "latitude": 41.603001, "longitude": -70.970479, "team": 1}
 	]
 }
 ```
