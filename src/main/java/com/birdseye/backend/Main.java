@@ -65,6 +65,8 @@ public class Main
 
 		/* create a group */
 		post("/create", (req, res) -> {
+			System.out.println("Incoming request:");
+			System.out.println(req.body());
 			JSONObject toReturn = new JSONObject();
 			JSONObject requestJson = new JSONObject(req.body());
 
@@ -82,6 +84,9 @@ public class Main
 			Group g = new Group(name, teams);
 
 			toReturn.put("group_id", g.getGroupId());
+
+			System.out.println("Outgoing response:");
+			System.out.println(toReturn.toString());
 			return toReturn.toString();
 		});
 
@@ -93,7 +98,8 @@ public class Main
 
 			/* check required fields */
 			String [] requiredFields = {
-				"group_id", "id", "latitude", "longitude", "locations"
+				"group_id", "id", "latitude", "longitude","precision", "speed", 
+				"direction", "locations"
 			};
 
 			for(String field : requiredFields){
@@ -152,6 +158,6 @@ static int getHerokuAssignedPort() {
 	if (processBuilder.environment().get("PORT") != null) {
 		return Integer.parseInt(processBuilder.environment().get("PORT"));
 	}
-	return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
+	return 8080; //return default port if heroku-port isn't set (i.e. on localhost)
 	}
 }
