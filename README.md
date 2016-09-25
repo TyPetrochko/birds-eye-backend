@@ -14,7 +14,7 @@ Get a list of groups currently in play.
 - URL:
 	- `/groups`
 - Method:
-	- `GET`
+	- `POST`
 - Response object
 ```json
 {"groups": [
@@ -24,7 +24,7 @@ Get a list of groups currently in play.
 }
 ```
 
-## Join groups
+## Join a group
 
 Join a group. This also tells the server to assign the sender a unique ID. Once you get a response, immediately start pinging the server with your location.
 
