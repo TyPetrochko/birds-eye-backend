@@ -32,10 +32,10 @@ Join a group. This also tells the server to assign the sender a unique ID. Once 
 	- `/join`
 - Method:
 	- `POST`
-- Data params. `team` is optional.
+- Data params.
 	- `{"group_id":6, "team": 2}`
 - Response object
-	- `{"status":"ok", "id": 54, "team": 2}`
+	- `{"status":"ok", "id": 54}`
 - List of statuses (maybe more to come)
 	- `ok`
 	- `bad request`
@@ -48,7 +48,7 @@ Create a group with a certain number of teams. If you don't want to play with te
 	- `/create`
 - Method:
 	- `POST`
-- Data params. `team` is optional.
+- Data params.
 	- `{"name":"Lee's Team", "teams": 2}`
 - Response object:
 	- `{"group_id": 4}`
@@ -61,7 +61,7 @@ Update the server with your current location.
 	- `/ping`
 - Method:
 	- `POST`
-- JSON data params. `speed` and `direction` are optional, but don't include only one!
+- JSON data params.
 	- `{"id": 12, "group_id": 6, "latitude": 41.613032, "longitude": -70.970479, "precision": 10, "speed": 1.5, "direction": 91.3, "locations": true}`
 - Response object if locations set to `true`
 ```json
